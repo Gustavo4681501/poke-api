@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "FuentePokedex";
+    src: url(../../../public/fonts/Pokemon\ Solid.ttf);
+}
+
+#navBarContainer{
+
+
+width: 100%;
+background-color: rgba(255, 0, 0, 0.306);
+}
+
+.navbar-brand{
+    font-family: "FuentePokedex";
+    display: flex;
+    flex-direction: row;
+}
+
+.pokeImg{
+    margin-right: 17%;
+}
+
+.navbar-brand>img {
+    width: 90px;
+    height: 90px;
+}
+

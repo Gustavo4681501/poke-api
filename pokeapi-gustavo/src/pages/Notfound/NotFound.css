@@ -1,0 +1,14 @@
+#notFoundContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: rgba(177, 177, 17, 0.852);
+}
+
+#notFoundContainer > img{
+    width: 50%;
+    height: 50%;
+   
+}

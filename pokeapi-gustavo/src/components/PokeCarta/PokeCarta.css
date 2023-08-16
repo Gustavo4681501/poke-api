@@ -1,0 +1,138 @@
+.card {
+    width: 200px;
+    background-color: rgb(55, 55, 95);
+    height: 400px;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.ulTipo {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.liTipo{
+    text-align: center;
+    margin: 0 2px;
+    border-radius: 5px;
+    width: 60px;
+    border: solid 2px black;
+}
+.card-title{
+    text-align: center;
+}
+
+.pokeCarta{
+    display: flex;
+    justify-content: center;
+
+}
+
+* {
+  
+  box-sizing: border-box
+}
+
+html, body {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 90vh;
+  width: 100%;
+}
+
+.title {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.pokedex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 15px;
+    height: 90%;
+}
+
+.pokemon-card {
+  border: 1px solid #ccc;
+  border-radius: .6em;
+  display: flex;
+  box-shadow: .1em .1em .6em .2em #d1d1d1;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 320px;
+  max-height: 120px;
+  padding: .8em;
+  position: relative;
+  width: 100%;
+  & .number {
+    color: #2d2222;
+    font-size: .7em;
+    font-weight: 700;
+  }
+  & .name {
+    color: #ffffff;
+    font-size: 1.275em;
+    font-weight: 600;
+    padding: .1em 0;
+  }
+  & .image {
+    position: relative;
+    width: 120px;
+    top: -1.6em;
+    right: -1.6em;
+    z-index: 1;
+    & img {
+      width: 100%;
+    }
+  }
+  &:after {
+    content: '';
+    background-image: url(https://icon-library.com/images/pokemon-desktop-icon/pokemon-desktop-icon-23.jpg);
+    background-repeat: no-repeat;
+    background-size: 8em;
+    filter: brightness(100%);
+    opacity: .1;
+    position: absolute;
+    height: 7em;
+    width: 7em;
+    right: 0;
+    top: .4em;
+  }
+  &.-green {
+    background-color: #62bc6c;
+  }
+  &.-yellow {
+    background-color: #F2CB55;
+  }
+  &.-pink {
+    background-color: #EB4971;
+  }
+}
+
+.kind {
+  border-radius: .2em;
+  color: #ffffff;
+  display: inline-block;
+  font-size: .8em;
+  padding: .3em .6em;
+  margin-top: .3em;
+  &.-bug {
+    background: #8BB22F;
+  }
+  &.-poison {
+    background: #A552CC;
+  }
+  &.-eletric {
+    background: #EED533;
+  }
+  &.-fighting {
+    background: #D04164;
+  }
+}
